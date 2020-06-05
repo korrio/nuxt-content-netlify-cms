@@ -1,13 +1,13 @@
 <template>
-  <div class="px-6">
-    <div class="">
+  <div class="px-6 max-w-5xl mx-auto">
+    <div class="max-w-3xl mx-auto">
       <h1 class="text-3xl font-medium">
         {{ post.title }}
       </h1>
-      <span class="text-sm">{{ postDate }}</span>
+      <span class="text-sm text-gray-500">{{ postDate }}</span>
     </div>
 
-    <div class="mt-4">
+    <div class="my-4">
       <nuxt-content :document="post" />
     </div>
   </div>
@@ -38,6 +38,24 @@ export default {
 
 <style scoped>
 .nuxt-content h1 {
-  @apply text-xl;
+  @apply text-2xl;
+}
+.nuxt-content h2 {
+  @apply text-xl mt-2;
+}
+.nuxt-content h3 {
+  @apply mt-2;
+}
+.nuxt-content ul li {
+  @apply mt-1 list-disc ml-8;
+}
+.nuxt-content ol li {
+  @apply mt-1 list-decimal ml-8;
+}
+.nuxt-content img {
+  @apply py-8;
+}
+.nuxt-content :not(img) {
+  @apply max-w-3xl mx-auto;
 }
 </style>

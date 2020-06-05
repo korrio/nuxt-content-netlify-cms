@@ -1,5 +1,5 @@
 <template>
-  <div class="px-6">
+  <div class="px-6 max-w-3xl mx-auto">
     <div>
       <h1 class="text-3xl font-medium">
         Welcome

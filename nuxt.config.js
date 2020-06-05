@@ -47,6 +47,9 @@ export default {
    ** Nuxt.js Content Module Settings
    */
   content: {
+    markdown: {
+      plugins: ["remark-unwrap-images"],
+    },
     // Options
   },
   /*

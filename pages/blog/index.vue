@@ -1,12 +1,12 @@
 <template>
-  <div class="px-6">
+  <div class="px-6 max-w-3xl mx-auto">
     <h1 class="text-3xl font-medium">
       Blog
     </h1>
-    <div class="mt-6">
-      <ul class="space-y-4">
+    <div class="mt-5">
+      <ul class="space-y-5">
         <li v-for="post in posts" :key="post.date">
-          <nuxt-link :to="'/blog/' + post.slug">
+          <nuxt-link :to="'/blog/' + post.slug" class="py-1">
             <h2 class="text-xl font-medium">
               {{ post.title }}
             </h2>
