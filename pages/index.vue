@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
+  <div class="px-4">
     <div>
       <h1 class="text-4xl">
         Welcome
       </h1>
       <nuxt-link to="blog">
-        Blog posts
+        Go check the blog posts
       </nuxt-link>
     </div>
   </div>
@@ -30,10 +30,4 @@ export default {
 };
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-</style>
+<style></style>

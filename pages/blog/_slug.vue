@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="px-4">
     <h1 class="text-2xl">
       {{ post.title }}
     </h1>
