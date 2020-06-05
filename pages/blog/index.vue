@@ -15,15 +15,13 @@
 <script>
 export default {
   async fetch() {
-    this.posts = await this.$content('blog')
-      .sortBy('date', 'desc')
-      .fetch()
+    this.posts = await this.$content('blog').sortBy('date', 'desc').fetch()
   },
   data() {
     return {
-      posts: []
+      posts: [],
     }
-  }
+  },
 }
 </script>
 

@@ -18,9 +18,9 @@ export default {
   },
   data() {
     return {
-      post: {}
+      post: {},
     }
-  }
+  },
 }
 </script>
 
