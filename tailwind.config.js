@@ -11,12 +11,12 @@ module.exports = {
   purge: {
     // We prefixed with `example/` here since we run `nuxt example/` and working dir is '../' for PurgeCSS
     content: [
-      'components/**/*.vue',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'content/**/*.md',
-      'plugins/**/*.js',
-      'nuxt.config.js',
+      "components/**/*.vue",
+      "layouts/**/*.vue",
+      "pages/**/*.vue",
+      "content/**/*.md",
+      "plugins/**/*.js",
+      "nuxt.config.js",
     ],
   },
-}
+};

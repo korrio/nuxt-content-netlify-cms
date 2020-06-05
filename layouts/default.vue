@@ -4,8 +4,12 @@
       <nav>
         <ul>
           <li>
-            <nuxt-link to="/">Home</nuxt-link>
-            <nuxt-link to="/blog">Blog</nuxt-link>
+            <nuxt-link to="/">
+              Home
+            </nuxt-link>
+            <nuxt-link to="/blog">
+              Blog
+            </nuxt-link>
           </li>
         </ul>
       </nav>
@@ -16,8 +20,8 @@
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

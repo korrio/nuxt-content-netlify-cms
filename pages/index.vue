@@ -1,8 +1,12 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="text-4xl">Welcome</h1>
-      <nuxt-link to="blog">Blog posts</nuxt-link>
+      <h1 class="text-4xl">
+        Welcome
+      </h1>
+      <nuxt-link to="blog">
+        Blog posts
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -18,12 +22,12 @@ export default {
     return {
       script: [
         {
-          src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+          src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
         },
       ],
-    }
+    };
   },
-}
+};
 </script>
 
 <style>

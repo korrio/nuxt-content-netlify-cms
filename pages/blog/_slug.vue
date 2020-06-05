@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="text-2xl">{{ post.title }}</h1>
+    <h1 class="text-2xl">
+      {{ post.title }}
+    </h1>
     <p>{{ post.date }}</p>
 
     <div class="mt-4">
@@ -12,16 +14,16 @@
 <script>
 export default {
   async fetch() {
-    this.post = await this.$content('blog', this.$route.params.slug)
-      .sortBy('date', 'desc')
-      .fetch()
+    this.post = await this.$content("blog", this.$route.params.slug)
+      .sortBy("date", "desc")
+      .fetch();
   },
   data() {
     return {
       post: {},
-    }
+    };
   },
-}
+};
 </script>
 
 <style scoped>
