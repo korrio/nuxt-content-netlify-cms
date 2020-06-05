@@ -1,9 +1,11 @@
 <template>
-  <div class="px-4">
-    <h1 class="text-2xl">
-      {{ post.title }}
-    </h1>
-    <p>{{ post.date }}</p>
+  <div class="px-6">
+    <div class="">
+      <h1 class="text-3xl font-medium">
+        {{ post.title }}
+      </h1>
+      <span class="text-sm">{{ postDate }}</span>
+    </div>
 
     <div class="mt-4">
       <nuxt-content :document="post" />
@@ -22,6 +24,14 @@ export default {
     return {
       post: {},
     };
+  },
+  computed: {
+    postDate() {
+      if (!this.post.date) return "";
+      const date = new Date(this.post.date);
+      const formated = new Intl.DateTimeFormat().format(date);
+      return formated;
+    },
   },
 };
 </script>

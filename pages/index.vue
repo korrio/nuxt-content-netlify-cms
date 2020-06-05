@@ -1,12 +1,14 @@
 <template>
-  <div class="px-4">
+  <div class="px-6">
     <div>
-      <h1 class="text-4xl">
+      <h1 class="text-3xl font-medium">
         Welcome
       </h1>
-      <nuxt-link to="blog">
-        Go check the blog posts
-      </nuxt-link>
+      <div class="mt-6">
+        <p>
+          This is my new amazing webpage!
+        </p>
+      </div>
     </div>
   </div>
 </template>

@@ -1,21 +1,15 @@
 <template>
   <div>
     <header>
-      <nav class="m-4">
-        <ul class="flex space-x-4">
+      <nav class="p-4">
+        <ul class="flex space-x-2">
           <li>
-            <nuxt-link
-              to="/"
-              class="inline-block px-4 py-2 bg-gray-200 rounded"
-            >
+            <nuxt-link to="/" class="inline-block px-2 py-1 text-gray-500">
               Home
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link
-              to="/blog"
-              class="inline-block px-4 py-2 bg-gray-200 rounded"
-            >
+            <nuxt-link to="/blog" class="inline-block px-2 py-1 text-gray-500">
               Blog
             </nuxt-link>
           </li>
@@ -28,7 +22,7 @@
 
 <style scoped>
 .nuxt-link-exact-active {
-  @apply bg-gray-600 text-white;
+  @apply text-indigo-600;
 }
 </style>
 
