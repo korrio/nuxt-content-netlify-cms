@@ -4,9 +4,7 @@
       Blog
     </h1>
     <ul>
-      <li
-v-for="post in posts" :key="post.date"
->
+      <li v-for="post in posts" :key="post.date">
         <nuxt-link :to="'/blog/' + post.slug">
           <h2 class="text-3xl">
             {{ post.title }}

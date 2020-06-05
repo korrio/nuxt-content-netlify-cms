@@ -1,8 +1,8 @@
 {
   "name": "nuxt-content-netlifycms",
   "version": "1.0.0",
-  "description": "My dazzling Nuxt.js project",
-  "author": "Santi",
+  "description": "Nuxt Content Netlify CMS Integration",
+  "author": "Santi Cros",
   "private": true,
   "scripts": {
     "dev": "nuxt",
