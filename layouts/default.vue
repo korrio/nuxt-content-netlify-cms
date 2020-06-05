@@ -1,5 +1,15 @@
 <template>
   <div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <nuxt-link to="/">Home</nuxt-link>
+            <nuxt-link to="blog">Blog</nuxt-link>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <nuxt />
   </div>
 </template>
