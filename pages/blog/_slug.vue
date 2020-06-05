@@ -1,6 +1,6 @@
 <template>
-  <div class="px-6 max-w-5xl mx-auto">
-    <div class="max-w-3xl mx-auto">
+  <div class="max-w-5xl mx-auto">
+    <div class="px-6 max-w-3xl mx-auto">
       <h1 class="text-3xl font-medium">
         {{ post.title }}
       </h1>
@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .nuxt-content h1 {
-  @apply text-2xl;
+  @apply text-2xl leading-tight;
 }
 .nuxt-content h2 {
   @apply text-xl mt-2;
@@ -46,16 +46,29 @@ export default {
 .nuxt-content h3 {
   @apply mt-2;
 }
+.nuxt-content ul {
+  @apply list-disc;
+}
+
 .nuxt-content ul li {
-  @apply mt-1 list-disc ml-8;
+  @apply mt-1 ml-8;
 }
 .nuxt-content ol li {
-  @apply mt-1 list-decimal ml-8;
+  @apply list-decimal;
+}
+.nuxt-content ol li {
+  @apply mt-1 ml-8;
 }
 .nuxt-content img {
-  @apply py-8;
+  @apply py-3;
 }
-.nuxt-content :not(img) {
-  @apply max-w-3xl mx-auto;
+
+@media screen and (min-width: 640px) {
+  .nuxt-content img {
+    @apply py-6;
+  }
+}
+.nuxt-content > :not(img) {
+  @apply max-w-3xl mx-auto px-6;
 }
 </style>
