@@ -1,6 +1,6 @@
 # nuxt-content-netlifycms
 
-> My dazzling Nuxt.js project
+> A Nuxt.js + Nuxt Content + Netlify CMS Demos
 
 ## Build Setup
 
@@ -11,12 +11,12 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
+# build for production with static configr
 $ npm run build
-$ npm run start
+$ npm run export
 
-# generate static project
-$ npm run generate
+# serve locally to test after export
+$ npm run serve
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

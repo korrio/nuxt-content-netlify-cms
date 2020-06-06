@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header>
+    <header class="max-w-3xl mx-auto">
       <nav class="p-4">
         <ul class="flex space-x-2">
           <li>
@@ -31,5 +31,10 @@ html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html.dark-mode body {
+  background-color: #091a28;
+  color: #f2f8f7;
 }
 </style>
