@@ -19,3 +19,27 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - file: 'content/index.md'
+        name: 'index'
+        label: 'Landing Page'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - label: 'Content Blocks'
+            name: 'contentBlocks'
+            widget: 'list'
+            types:
+              - name: 'pageHero'
+                widget: 'object'
+                fields:
+                  - { label: 'Header', name: 'header', widget: 'string' }
+                  - { label: 'Description', name: 'description', widget: 'markdown' }
+              - name: 'callToAction'
+                widget: 'object'
+                fields:
+                  - { label: 'Header', name: 'header', widget: 'string' }
+                  - { label: 'Description', name: 'description', widget: 'markdown' }
+                  - { label: 'Button', name: 'button', widget: 'string' }
