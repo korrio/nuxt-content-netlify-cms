@@ -28,6 +28,11 @@ export default {
       posts: [],
     };
   },
+  head() {
+    return {
+      title: "Blog",
+    };
+  },
 };
 </script>
 

@@ -33,6 +33,11 @@ export default {
       return formated;
     },
   },
+  head() {
+    return {
+      title: this.post.title,
+    };
+  },
 };
 </script>
 
