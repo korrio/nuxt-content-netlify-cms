@@ -32,12 +32,12 @@ collections:
             name: 'contentBlocks'
             widget: 'list'
             types:
-              - name: 'pageHero'
+              - name: 'PageHero'
                 widget: 'object'
                 fields:
                   - { label: 'Header', name: 'header', widget: 'string' }
                   - { label: 'Description', name: 'description', widget: 'markdown' }
-              - name: 'callToAction'
+              - name: 'CallToAction'
                 widget: 'object'
                 fields:
                   - { label: 'Header', name: 'header', widget: 'string' }

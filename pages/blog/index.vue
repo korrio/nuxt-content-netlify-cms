@@ -5,7 +5,7 @@
     </h1>
     <div class="mt-5">
       <ul class="space-y-5">
-        <li v-for="post in posts" :key="post.date">
+        <li v-for="post in posts" :key="post.slug">
           <nuxt-link :to="'/blog/' + post.slug" class="py-1">
             <h2 class="text-xl font-medium">
               {{ post.title }}
