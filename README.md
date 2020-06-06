@@ -1,6 +1,6 @@
 # nuxt-content-netlifycms
 
-> A Nuxt.js + Nuxt Content + Netlify CMS Demos
+> A Nuxt.js + Nuxt Content + Netlify CMS Demo
 
 ## Build Setup
 
