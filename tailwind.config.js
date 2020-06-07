@@ -29,7 +29,6 @@ module.exports = {
   },
   plugins: [require("tailwindcss-dark-mode")()],
   purge: {
-    // We prefixed with `example/` here since we run `nuxt example/` and working dir is '../' for PurgeCSS
     enabled: process.env.NODE_ENV === "production",
     content: [
       "content/**/*.md",

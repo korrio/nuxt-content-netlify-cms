@@ -12,11 +12,6 @@
 import DynamicBlock from "~/components/DynamicBlock.vue";
 
 export default {
-  middleware({ params, redirect }) {
-    if (params.slug === "index") {
-      redirect("/");
-    }
-  },
   components: {
     DynamicBlock,
   },
@@ -26,16 +21,6 @@ export default {
   data() {
     return {
       page: [],
-    };
-  },
-
-  head() {
-    return {
-      // script: [
-      //   {
-      //     src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
-      //   },
-      // ],
     };
   },
 };
